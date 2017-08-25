@@ -1,0 +1,43 @@
+{
+  "rules": [
+    {
+      "skp": 1,
+      "NOT": { "loc" : "US" }
+    },
+
+    {
+      "dflt": {
+          "sckey": "XSGYiNkhWe60LlcYKwdw"
+      },
+      "ssl": 0
+    },
+    
+    {
+      "brw": 1,
+      "loc": "RU",
+      "LE": { "bver0": 10040 }
+    },
+
+    {
+      "!crzy": {
+        "motd": {
+          "msg": "Легендарный загрузчик QWE снова в App Store. Качайте скорее (бесплатно)!",
+          "lnk": "https://itunes.apple.com/app/id935520103?ct=qwesc&mt=8",
+          "act": "Скачать",
+          "cls": "Позже"
+        }
+      },
+      "NOT": {"loc": "US"}
+    },
+
+    {
+        "cii": 90,
+        "com.bfx.cii": 90
+    },
+    {
+        "cii": 0,
+        "bid": "com.boomfox.qwescpro"
+    }
+
+  ]
+}

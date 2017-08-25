@@ -1,0 +1,61 @@
+{
+  "rules": [
+    {
+      "env": {
+        "appmail": "qwedownloader@boomfox.ru"
+      }
+    },
+
+    {
+      "motd": {
+        "msg": "We highly recommend to turn on push notifications for the app. Otherwise you can miss important updates, features and free promo codes for PRO version.",
+        "cls": "Close",
+        "act": "Enable",
+        "lnk": "self://settings"
+      },
+      "penb": 0,
+      "rnc": 1
+    },
+
+    {
+      "OR": [
+        { "NOT": {"bdl": "com.dima.dplayer" }},
+        { "NOT": {"bdl": "com.boomfox.sc" }},
+        { "NOT": {"bdl": "com.boomfox.scpro" }},
+        { "NOT": {"bdl": "com.boomfox.fmvd" }},
+        { "NOT": {"bdl": "com.boomfox.qwemusic" }}
+      ],
+      "kchn": { "fbrw": 1 },
+      "dflt": { "fbrw": 1 },
+      "loc": "RU"
+    },
+
+    {
+      "OR": [
+        { "dflthas": "runs1000" },
+        { "kchnhas": "cbrw" },
+        { "kchnhas": "fbrw" }
+      ],
+      "env": {
+        "sns": ["snbrw", "sncld", "snfle", "snstt"]
+      },
+      "dflt": {
+        "hme": "https://qwedownloads.firebaseapp.com/demo/"
+      }
+    },
+    
+    {
+      "cii": 0,
+      "bid": "com.boomfox.downloads"
+    },
+    {
+      "cii": 90,
+      "bid": "com.boomfox.downloadslite"
+    },
+
+    {
+      "loglvl": 1,
+      "logmtr": []
+    }
+  ]
+}

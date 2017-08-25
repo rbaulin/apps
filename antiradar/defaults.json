@@ -1,0 +1,58 @@
+{
+  "rules": [
+    {
+      "loglvl": 1
+    },
+    {
+      "shrtxt": "Brand new speedometer app http://bit.ly/speedmtr.",
+      "NOT": {"loc": "RU"}
+    },
+    {
+      "shrtxt": "Спидометр и антирадар http://bit.ly/speedmtr.",
+      "loc": "RU"
+    },
+
+    {
+      "motd": {
+        "msg": "We highly recommend to turn on push notifications for the app. Otherwise you can miss important updates, features and free promo codes for PRO version.",
+        "cls": "Close",
+        "act": "Enable",
+        "lnk": "self://settings"
+      },
+      "penb": 0,
+      "rnc": 2
+    },
+
+    {
+      "crzy": {
+        "motd": {
+          "msg": "Хотите увидеть скины для спидометра, антирадар и другие нововведения? Высокие оценки и хорошие отзывы ускорят разработку :)",
+          "lnk": "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=1114655078",
+          "act": "5 звезд",
+          "cls": "Позже",
+          "idc": "9apr16"
+        },
+        "intr": 10,
+        "dly": 10
+      },
+      "loc": "RU"
+    },
+    {
+      "crzy": {
+        "motd": {
+          "msg": "Would you like to see skins and more features? Please support the developers and leave a review :)",
+          "lnk": "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=1114655078",
+          "act": "5 stars",
+          "cls": "Later",
+          "idc": "9apr16"
+        },
+        "intr": 10,
+        "dly": 10
+      },
+      "AND": [
+        { "NOT": {"loc": "RU"}},
+        { "NOT": {"tzo": -28800}}
+      ]
+    }
+  ]
+}

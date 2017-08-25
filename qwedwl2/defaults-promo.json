@@ -1,0 +1,50 @@
+{
+  "rules": [
+
+    {
+      "crzy": {
+        "motd": {
+          "msg": "Легендарный загрузчик КВЕ снова в App Store. Качайте скорее (бесплатно)!",
+          "lnk": "https://itunes.apple.com/RU/app/id935520103",
+          "act": "Скачать",
+          "cls": "Позже"
+        }
+      },
+      "NOT": {"loc": "US"},
+      "bdl": "com.boomfox.downloadslite"
+    },
+
+    {
+      "crzy": {
+        "motd": {
+          "msg": "Поставьте нам, пожалуйста, высокую оценку, чтобы поддержать разработчиков! И не забывайте присылать пожелания нам на почту :)",
+          "lnk": "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=935520103",
+          "act": "5 звезд",
+          "cls": "Позже",
+          "idc": "29jan15"
+        },
+        "intr": 60,
+        "dly": 60
+      },
+      "loc": "RU",
+      "bid": "com.boomfox.downloadslite"
+    },
+    {
+      "crzy": {
+        "motd": {
+          "msg": "Dear users, we have worked hard to deliver the new version. Please support us and leave a review if you like it!",
+          "lnk": "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=935520103",
+          "act": "5 stars",
+          "cls": "Later",
+          "idc": "29jan15"
+        },
+        "intr": 60,
+        "dly": 60
+      },
+      "NOT": {"loc": "RU"},
+      "NOT": {"tzo": -28800},
+      "bid": "com.boomfox.downloadslite"
+    }
+    
+  ]
+}

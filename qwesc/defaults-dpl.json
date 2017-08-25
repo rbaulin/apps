@@ -1,0 +1,43 @@
+{
+  "rules": [
+    {
+      "skp": 1,
+      "NOT": { "loc" : "US" }
+    },
+
+    {
+        "dflt": {
+            "sckey": "XSGYiNkhWe60LlcYKwdw"
+        },
+        "ssl": 0
+    },
+    
+    {
+      "brw": 1,
+      "loc": "RU",
+      "LE": { "bver0": 10040 }
+    },
+
+    {
+      "crzy": {
+        "motd": {
+          "msg": "Дорогие пользователи, с наступающим вас Новым Годом! Качайте музыку из ВК с новым приложением.",
+          "lnk": "https://itunes.apple.com/ru/app/id1056955917?ct=779&mt=8",
+          "act": "Скачать",
+          "idc": "dpl"
+        },
+        "loc": "RU"
+      }
+    },
+
+    {
+        "cii": 90,
+        "com.bfx.cii": 90
+    },
+    {
+        "cii": 0,
+        "bid": "com.boomfox.qwescpro"
+    }
+
+  ]
+}

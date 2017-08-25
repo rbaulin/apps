@@ -1,0 +1,67 @@
+{
+  "rules": [
+    {
+      "blacklistedHosts": [],
+      "disabledMimes": [],
+      "cii": 0
+    },
+
+    {
+      "!motd": {
+        "ttl": "Version 2.0 is available",
+        "msg": "Welcome the new QWE. What's new: auto-rename for downloads, lockscreen controls, save video to camera roll, updated player, optimizations for latest iOS, thousands of improvements and bug fixes suggested in reviews.\n\n*Downloaded files will stay in the app after update.",
+        "act": "Update",
+        "cls": "Close",
+        "lnk": "https://itunes.apple.com/app/id935520103"
+      },
+      "NOT": {"loc": "RU"},
+      "cii": 0
+    },
+
+    {
+      "!motd": {
+        "ttl": "Доступна версия 2.0",
+        "msg": "Встречайте новый QWE! Что нового: автопереименование загрузок, управление с экрана блокировки, сохранение видео в фотопленку, обновленный плеер, оптимизация под последний iOS, тысячи исправлений и улучшений на базе Ваших отзывов.\n\n*После обновления загруженные файлы останутся в приложении.",
+        "act": "Обновить",
+        "cls": "Позже",
+        "lnk": "https://itunes.apple.com/app/id935520103"
+      },
+      "loc": "RU",
+      "cii": 0
+    },
+
+    {
+      "crzy": {
+        "motd": {
+          "ttl": "Try out new version",
+          "msg": "Check out latest downloader app. Many improvements from your reviews. NO UPDATE required!",
+          "act": "Download",
+          "cls": "Close",
+          "lnk": "https://itunes.apple.com/app/id979401801&mt=8",
+          "idc": "dl1apr"
+        },
+        "intr": 15,
+        "dly": 5
+      },
+      "ver": 14030,
+      "AND": [
+        {"NOT": {"loc": "US"}},
+        {"NOT": {"loc": "AU"}},
+        {"NOT": {"loc": "OM"}},
+        {"NOT": {"loc": "RU"}},
+        {"NOT": {"loc": "TH"}},
+        {"NOT": {"loc": "CA"}},
+        {"NOT": {"loc": "JP"}},
+        {"NOT": {"loc": "PH"}}
+      ]
+    },
+    
+    {
+      "cii": 0
+    },
+    {
+      "cii": 0,
+      "bid": "com.boomfox.downloads"
+    }
+  ]
+}

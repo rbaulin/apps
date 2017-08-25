@@ -1,0 +1,130 @@
+{
+  "rules": [
+    {
+      "cii": 0,
+      "bid": "com.boomfox.downloads"
+    },
+    {
+      "cii": 90,
+      "bid": "com.boomfox.downloadslite"
+    },
+    {
+      "!cii": 0,
+      "!dflthas": "nads"
+    },
+
+    {
+      "loglvl": 1
+    },
+
+    {
+      "motd": {
+        "msg": "We highly recommend to turn on push notifications for the app. Otherwise you can miss important updates, features and free promo codes for PRO version.",
+        "cls": "Close",
+        "act": "Enable",
+        "lnk": "self://settings"
+      },
+      "penb": 0,
+      "rnc": 1
+    },
+
+    {
+      "OR": [
+        { "NOT": {"bdl": "com.boomfox.sc" }},
+        { "NOT": {"bdl": "com.boomfox.scpro" }},
+        { "NOT": {"bdl": "com.boomfox.fmvd" }},
+        { "NOT": {"bdl": "com.boomfox.qwemusic" }},
+        { "NOT": {"bdl": "com.boomfox.qwevideo" }}
+      ],
+      "kchn": { "fbrw": 1 },
+      "dflt": { "fbrw": 1 },
+      "loc": "RU"
+    },
+
+    {
+      "OR": [
+        { "dflthas": "runs1000" },
+        { "kchnhas": "cbrw" },
+        { "kchnhas": "fbrw" }
+      ],
+      "env": {
+        "sns": ["snbrw", "sncld", "snfle", "snstt"],
+        "snbrw": "none"
+      }
+    },
+
+    {
+      "OR": [
+        { "dflthas": "runs1000" },
+        { "kchnhas": "cbrw" },
+        { "kchnhas": "fbrw" }
+      ],
+      "!crzy": {
+        "motd": {
+          "msg": "Мы многое исправили в обновлении. Поставьте нам, пожалуйста, высокую оценку, чтобы поддержать разработчиков! И не забывайте присылать пожелания нам на почту :)",
+          "lnk": "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=935520103",
+          "act": "5 звезд",
+          "cls": "Позже",
+          "idc": "9apr16"
+        },
+        "intr": 10,
+        "dly": 10
+      },
+      "loc": "RU",
+      "bid": "com.boomfox.downloadslite"
+    },
+    {
+      "OR": [
+        { "dflthas": "runs1000" },
+        { "kchnhas": "cbrw" },
+        { "kchnhas": "fbrw" }
+      ],
+      "!crzy": {
+        "motd": {
+          "msg": "Dear users, we have added tons of things in this update. Please support us and leave a review if you like it!",
+          "lnk": "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=935520103",
+          "act": "5 stars",
+          "cls": "Later",
+          "idc": "9apr16"
+        },
+        "intr": 10,
+        "dly": 10
+      },
+      "NOT": {"loc": "RU"},
+      "NOT": {"tzo": -28800},
+      "bid": "com.boomfox.downloadslite"
+    },
+
+    {
+      "!motd": {
+        "ttl": "Ищете загрузчик музыки из ВК?",
+        "msg": "",
+        "act": "Скачать",
+        "cls": "Закрыть",
+        "lnk": "https://itunes.apple.com/ru/app/id1055804409?mt=8",
+        "idc": "pp15feb"
+      },
+      "loc": "RU"
+    },
+
+    {
+      "AND": [
+        { "NOT": { "dflthas": "runs1000" }},
+        { "NOT": { "kchnhas": "cbrw" }},
+        { "NOT": { "kchnhas": "fbrw" }},
+        { "NOT": { "loc": "US" }},
+        { "NOT": { "loc": "CA" }},
+        { "NOT": { "loc": "AU" }}
+      ],
+      "motd": {
+        "msg": "Looking for a browser tab?",
+        "lnk": "https://itunes.apple.com/app/id1083382404?mt=8",
+        "act": "Get",
+        "cls": "Close",
+        "idc": "9apr16"
+      },
+      "dly": 1,
+      "intr": 10
+    }
+  ]
+}

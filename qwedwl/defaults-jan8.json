@@ -1,0 +1,53 @@
+{
+  "rules": [
+    {
+      "blacklistedHosts": [
+        "youtube.com",
+        "googlevideo.com",
+        "soundcloud.com",
+        "mp3skull.com",
+        "mp3monkey.com",
+        "soundowl.com"
+      ],
+      "disabledMimes":[
+      	"public.mp3"
+      ]
+    },
+
+    {
+      "blacklistedHosts": [],
+      "disabledMimes":[],
+      "AND": [
+        {"NOT": {"loc": "US"}},
+        {"NOT": {"loc": "RU"}}
+      ]
+    },
+
+    {
+      "blacklistedHosts": [],
+      "disabledMimes":[],
+      "loc": "RU",
+      "maxdat": 1445612823
+    },
+
+    {
+      "crzy": {
+        "motd": {
+          "msg": "Дорогие пользователи, с наступающим вас Новым Годом! Качайте музыку из ВК с новым приложением.",
+          "lnk": "https://itunes.apple.com/ru/app/id1056955917?ct=779&mt=8",
+          "act": "Скачать",
+          "idc": "dpl"
+        },
+        "loc": "RU"
+      }
+    },
+
+    {
+      "cii": 90
+    },
+    {
+      "cii": 0,
+      "bid": "com.boomfox.downloads"
+    }
+  ]
+}

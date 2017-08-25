@@ -1,0 +1,94 @@
+{
+  "rules": [
+    {
+      "cii": 0,
+      "bid": "com.boomfox.downloads"
+    },
+    {
+      "cii": 90,
+      "bid": "com.boomfox.downloadslite"
+    },
+
+    {
+      "loglvl": 1
+    },
+
+    {
+      "motd": {
+        "msg": "We highly recommend to turn on push notifications for the app. Otherwise you can miss important updates, features and free promo codes for PRO version.",
+        "cls": "Close",
+        "act": "Enable",
+        "lnk": "self://settings"
+      },
+      "penb": 0,
+      "rnc": 1
+    },
+
+    {
+      "OR": [
+        { "NOT": {"bdl": "com.dima.dplayer" }},
+        { "NOT": {"bdl": "com.boomfox.sc" }},
+        { "NOT": {"bdl": "com.boomfox.scpro" }},
+        { "NOT": {"bdl": "com.boomfox.fmvd" }},
+        { "NOT": {"bdl": "com.boomfox.qwemusic" }}
+      ],
+      "kchn": { "fbrw": 1 },
+      "dflt": { "fbrw": 1 },
+      "loc": "RU"
+    },
+
+    {
+      "OR": [
+        { "dflthas": "runs1000" },
+        { "kchnhas": "cbrw" },
+        { "kchnhas": "fbrw" }
+      ],
+      "env": {
+        "sns": ["snbrw", "sncld", "snfle", "snstt"],
+        "snbrw": "none"
+      }
+    },
+
+    {
+      "OR": [
+        { "dflthas": "runs1000" },
+        { "kchnhas": "cbrw" },
+        { "kchnhas": "fbrw" }
+      ],
+      "!crzy": {
+        "motd": {
+          "msg": "Мы многое исправили в обновлении. Поставьте нам, пожалуйста, высокую оценку, чтобы поддержать разработчиков! И не забывайте присылать пожелания нам на почту :)",
+          "lnk": "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=935520103",
+          "act": "5 звезд",
+          "cls": "Позже",
+          "idc": "9apr16"
+        },
+        "intr": 10,
+        "dly": 10
+      },
+      "loc": "RU",
+      "bid": "com.boomfox.downloadslite"
+    },
+    {
+      "OR": [
+        { "dflthas": "runs1000" },
+        { "kchnhas": "cbrw" },
+        { "kchnhas": "fbrw" }
+      ],
+      "!crzy": {
+        "motd": {
+          "msg": "Dear users, we have added tons of things in this update. Please support us and leave a review if you like it!",
+          "lnk": "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=935520103",
+          "act": "5 stars",
+          "cls": "Later",
+          "idc": "9apr16"
+        },
+        "intr": 10,
+        "dly": 10
+      },
+      "NOT": {"loc": "RU"},
+      "NOT": {"tzo": -28800},
+      "bid": "com.boomfox.downloadslite"
+    }
+  ]
+}

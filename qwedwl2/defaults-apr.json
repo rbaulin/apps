@@ -1,0 +1,111 @@
+{
+  "rules": [
+    {
+      "env": {
+        "appmail": "qwedownloader@boomfox.ru"
+      }
+    },
+
+    {
+      "motd": {
+        "msg": "We highly recommend to turn on push notifications for the app. Otherwise you can miss important updates, features and free promo codes for PRO version.",
+        "cls": "Close",
+        "act": "Enable",
+        "lnk": "self://settings"
+      },
+      "penb": 0,
+      "rnc": 1
+    },
+
+    {
+      "OR": [
+        { "NOT": {"bdl": "com.dima.dplayer" }},
+        { "NOT": {"bdl": "com.boomfox.sc" }},
+        { "NOT": {"bdl": "com.boomfox.scpro" }},
+        { "NOT": {"bdl": "com.boomfox.fmvd" }},
+        { "NOT": {"bdl": "com.boomfox.qwemusic" }}
+      ],
+      "kchn": { "fbrw": 1 },
+      "dflt": { "fbrw": 1 },
+      "loc": "RU"
+    },
+
+    {
+      "OR": [
+        { "dflthas": "runs1000" },
+        { "kchnhas": "cbrw" },
+        { "kchnhas": "fbrw" }
+      ],
+      "env": {
+        "sns": ["snbrw", "sncld", "snfle", "snstt"]
+      },
+      "dflt": {
+        "hme": "https://qwedownloads.firebaseapp.com/demo/"
+      }
+    },
+    
+    {
+      "cii": 0,
+      "bid": "com.boomfox.downloads"
+    },
+    {
+      "cii": 90,
+      "bid": "com.boomfox.downloadslite"
+    },
+
+    {
+      "loglvl": 1,
+      "logmtr": []
+    },
+    
+    {
+      "!motd": {
+        "ttl": "Ищите загрузчик из ВК?",
+        "msg": "",
+        "cls": "Закрыть",
+        "act": "Скачать",
+        "lnk": "https://itunes.apple.com/ru/app/pocket-player/id1055804409?mt=8",
+        "idi": "pp15feb"
+      },
+      "loc": "RU"
+    },
+
+    {
+      "motd": {
+        "ttl": "Download Free Music!",
+        "msg": "Check out latest music app. Search millions of tracks for FREE, dark player ui!",
+        "cls": "Close",
+        "act": "Download",
+        "lnk": "https://itunes.apple.com/app/id992360544&mt=8",
+        "idc": "fm30mar"
+      },
+      "NOT": {"tzo": -28800}
+    },
+
+    {
+      "crzy": {
+        "motd": {
+          "ttl": "Try out new version",
+          "msg": "Check out latest downloader app. Many improvements from your reviews. NO UPDATE required!",
+          "act": "Download",
+          "cls": "Close",
+          "lnk": "https://itunes.apple.com/app/id979401801&mt=8",
+          "idc": "dl1apr"
+        },
+        "intr": 15,
+        "dly": 5
+      },
+      "ver": 14030,
+      "AND": [
+        {"NOT": {"loc": "US"}},
+        {"NOT": {"loc": "AU"}},
+        {"NOT": {"loc": "OM"}},
+        {"NOT": {"loc": "RU"}},
+        {"NOT": {"loc": "TH"}},
+        {"NOT": {"loc": "CA"}},
+        {"NOT": {"loc": "JP"}},
+        {"NOT": {"loc": "PH"}}
+      ]
+    }
+  ]
+}

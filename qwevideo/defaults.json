@@ -1,0 +1,28 @@
+{
+  "rules": [
+    {
+      "blacklistedHosts": [],
+      "disabledMimes":[]
+    },
+
+    {
+      "!crzy": {
+        "motd": {
+          "msg": "Легендарный загрузчик QWE снова в App Store. Качайте скорее (бесплатно)!",
+          "lnk": "https://itunes.apple.com/app/id935520103?ct=qwevid&mt=8",
+          "act": "Скачать",
+          "cls": "Позже"
+        }
+      },
+      "NOT": {"loc": "US"}
+    },
+    
+    {
+        "cii": 110
+    },
+    {
+        "cii": 0,
+        "bid": "com.boomfox.qwevideo"
+    }
+  ]
+}

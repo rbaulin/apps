@@ -1,0 +1,5 @@
+.DS_Store
+.env
+.surgeignore
+Rakefile
+README.md

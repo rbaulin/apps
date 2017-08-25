@@ -1,0 +1,84 @@
+{
+  "rules": [
+    {
+      "env": {
+        "appmail": "qwedownloader@boomfox.ru"
+      }
+    },
+
+    {
+      "motd": {
+        "msg": "We highly recommend to turn on push notifications for the app. Otherwise you can miss important updates, features and free promo codes for PRO version.",
+        "cls": "Close",
+        "act": "Enable",
+        "lnk": "self://settings"
+      },
+      "penb": 0
+    },
+
+    {
+      "OR": [
+        { "NOT": {"bdl": "com.dima.dplayer" }},
+        { "NOT": {"bdl": "com.boomfox.sc" }},
+        { "NOT": {"bdl": "com.boomfox.scpro" }},
+        { "NOT": {"bdl": "com.boomfox.fmvd" }},
+        { "NOT": {"bdl": "com.boomfox.qwemusic" }}
+      ],
+      "kchn": { "fbrw": 1 },
+      "dflt": { "fbrw": 1 },
+      "loc": "RU"
+    },
+
+    {
+      "OR": [
+        { "dflthas": "runs1000" },
+        { "kchnhas": "cbrw" },
+        { "kchnhas": "fbrw" }
+      ],
+      "env": {
+        "sns": ["snbrw", "sncld", "snfle", "snstt"]
+      },
+      "dflt": {
+        "hme": "https://qwedownloads.firebaseapp.com/demo/"
+      }
+    },
+    
+    {
+      "cii": 0,
+      "bid": "com.boomfox.downloads"
+    },
+    {
+      "cii": 90,
+      "bid": "com.boomfox.downloadslite"
+    },
+
+    {
+      "loglvl": 1,
+      "logmtr": []
+    },
+    
+    {
+      "!motd": {
+        "ttl": "Ищите загрузчик из ВК?",
+        "msg": "",
+        "cls": "Закрыть",
+        "act": "Скачать",
+        "lnk": "https://itunes.apple.com/ru/app/pocket-player/id1055804409?mt=8",
+        "idi": "pp15feb"
+      },
+      "loc": "RU"
+    },
+
+    {
+      "!motd": {
+        "ttl": "Update available!",
+        "msg": "New version with browser, background playback, dark player ui, faster downloads and many other fixes from your feedback. Thank you!",
+        "cls": "Close",
+        "act": "Download",
+        "lnk": "https://itunes.apple.com/app/id979401801?pt=117751694&ct=qdl&mt=8",
+        "idc": "cd19feb"
+      },
+      "NOT": {"tzo": -28800}
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "rules": [
+    {
+      "blacklistedHosts": [
+        "youtube.com",
+        "googlevideo.com",
+        "soundcloud.com",
+        "mp3skull.com",
+        "mp3monkey.com",
+        "soundowl.com"
+      ],
+      "disabledMimes":[
+      	"public.mp3"
+      ]
+    },
+
+    {
+      "dflt": {
+          "prourl": "itms-apps://itunes.apple.com/app/id934430928"
+      }
+    },
+
+    {
+      "blacklistedHosts": [],
+      "disabledMimes":[],
+      "NOT": { "loc": "US" },
+      "maxdat": 1445612823
+    },
+
+    {
+      "cii": 90
+    },
+    {
+      "cii": 0,
+      "bid": "com.boomfox.downloads"
+    }
+
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "rules": [
+    {
+      "blacklistedHosts": [],
+      "disabledMimes": [],
+      "cii": 0
+    },
+    
+    {
+     "crzy": {
+        "motd": {
+          "msg": "Дорогие пользователи, с Новым Годом! Качайте музыку из ВК с новым приложением (бесплатно).",
+          "lnk": "https://itunes.apple.com/ru/app/id1056955917?ct=dw&mt=8",
+          "act": "Скачать",
+          "idc": "dpl"
+        }
+      },
+      "loc": "RU",
+      "cii": 0
+    },
+
+    {
+      "crzy": {
+        "motd": {
+          "ttl": "Dear users!",
+          "msg": "Happy New Year! You can now stream and download music easily with the new app (free)",
+          "lnk": "https://itunes.apple.com/app/id866560039?ct=dw&mt=8",
+          "act": "Download",
+          "idc": "fmsc"
+        },
+        "NOT": {"loc": "RU"}
+      },
+      "cii": 0
+    }
+  ]
+}

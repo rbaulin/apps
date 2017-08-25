@@ -1,0 +1,36 @@
+{
+	"rules" : {
+		"4" : {
+		    "ios_rater" : true,
+		    "ios_interstitials" : false,
+		    "ios_ads_min_time" : 10, 
+		    "ios_ads_min_screens" : 2,  
+		    "ios_ads_rt" : false,
+
+            "android_appaday_start_time"  : "2015-03-30T10:59:00+01:00",
+            "android_appaday_finish_time" : "2015-04-04T18:59:00+01:00",
+
+            "android_rater": true,
+            "android_interstitials" : true,
+            "android_ads_min_time" : 10,
+            "android_ads_min_screens" : 2            
+		}
+	},
+
+    "game_rater": {
+        "enabled": true, 
+        "level": 1,
+        "title": "Games 35cm",
+        "text": "If you enjoy playing Bounce Original, would you mind taking a moment to rate it? It won’t take more than a minute. Thanks for your support!"
+    },
+
+    "ios_rater": true,
+    "ios_interstitials" : true,
+    "ios_ads_min_time" : 10, 
+    "ios_ads_min_screens" : 2, 
+
+    "android_rater": true,
+    "android_interstitials" : true,
+    "android_ads_min_time" : 10,
+    "android_ads_min_screens" : 2
+}

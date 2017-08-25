@@ -1,0 +1,55 @@
+{
+  "rules": [
+    {
+      "blacklistedHosts": [
+        "youtube.com",
+        "googlevideo.com",
+        "soundcloud.com",
+        "mp3skull.com",
+        "mp3monkey.com",
+        "soundowl.com"
+      ],
+      "disabledMimes":[
+      	"public.mp3"
+      ]
+    },
+
+    {
+      "dflt": {
+          "prourl": "itms-apps://itunes.apple.com/app/id934430928"
+      }
+    },
+
+    {
+      "blacklistedHosts": [],
+      "disabledMimes":[],
+      "NOT": { "loc": "US" }
+    },
+
+    {
+      "blacklistedHosts": [],
+      "disabledMimes":[],
+      "loc": "RU",
+      "maxdat": 1445612823
+    },
+
+    {
+      "cii": 90
+    },
+    {
+      "cii": 0,
+      "bid": "com.boomfox.downloads"
+    },
+
+    {
+      "crzy": {
+        "motd": {
+          "msg": "Наш новый хит уже в апп сторе! Сколько сейфов взломаешь ты?",
+          "lnk": "https://itunes.apple.com/app/apple-store/id1060775769?pt=53765801&ct=qdw&mt=8",
+          "act": "Скачать"
+        },
+        "loc": "RU"
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "rules": [
+    {
+      "loglvl": 1
+    },
+    {
+      "shrtxt": "Antiradar for iOS http://bit.ly/antiradarapp.",
+      "NOT": {"loc": "RU"}
+    },
+    {
+      "shrtxt": "Антирадар для iOS http://bit.ly/antiradarapp.",
+      "loc": "RU"
+    },
+
+    {
+      "motd": {
+        "msg": "We highly recommend to turn on push notifications for the app. Otherwise you can miss important updates, features and free promo codes for PRO version.",
+        "cls": "Close",
+        "act": "Enable",
+        "lnk": "self://settings"
+      },
+      "penb": 0,
+      "rnc": 2
+    },
+
+    {
+      "crzy": {
+        "motd": {
+          "msg": "Нравится приложение? Поставьте хорошую оценку чтобы получать расширенные базы опасностей по всем регионам :)",
+          "lnk": "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=1129453573",
+          "act": "5 звезд",
+          "cls": "Позже",
+          "idc": "rt17jul16"
+        },
+        "intr": 10,
+        "dly": 10
+      },
+      "OR": [
+        {"loc": "RU"},
+        {"loc": "BY"},
+        {"loc": "KZ"},
+        {"loc": "UA"},
+        {"loc": "AM"}
+      ]
+    }
+  ]
+}
